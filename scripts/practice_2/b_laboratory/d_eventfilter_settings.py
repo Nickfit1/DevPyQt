@@ -19,12 +19,19 @@
 """
 
 from PySide6 import QtWidgets
+from ui.d_eventfilter_settings_form import Ui_Form
 
 
 class Window(QtWidgets.QWidget):
 
     def __init__(self, parent=None):
         super().__init__(parent)
+        self.ui = Ui_Form()
+        self.ui.setupUi(self)
+        self.initSignals()
+
+    def initSignals(self):
+
 
 
 if __name__ == "__main__":
